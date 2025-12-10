@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:15% ;
+    height: 60vh;
+    margin: 100px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+    border-radius: 10px;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.3);
+    
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #333;
+    position: relative;
+    left: 26px;
+    background: radial-gradient(circle, #fff 70% #ddd 100%);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: rotatefan .2s linear infinite;
+} 
+
+.blade1{
+    width: 60px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: #333;
+    position: absolute;
+    top: 32%;
+    margin:20px ;
+    transform: rotate(0deg);
+}
+.blade2{
+    width: 60px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: #333;
+    position: absolute;
+    margin:60px ;
+    transform: rotate(180deg);
+}
+.blade3{
+    transform: rotate(360deg);
+}
+@keyframes rotatefan{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+ .stand1{
+    width:16px;
+    height: 75px;
+    position: relative;
+    background: #999;
+    box-shadow: 0 4px 8px  rgba( 0, 0 , 0 ,0.2);
+    left:44% ;
+    border-radius: 5px;  
+}
+.stand2{
+    width: 30px;
+    height:80px;
+    background: #0066cc;
+    margin-left: 84px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.base{
+    width: 74px;
+    height: 74px;
+    background: #444;
+    border-radius: 5px; 
+    margin-left:62px ;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:inset 0 4px 10px rgba(0 , 0 ,0, 0.3),rgba( 0, 0 , 0 ,0.2)
+}
+button{
+    padding: 6px 14px;
+    background: #0066cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;    
+}
